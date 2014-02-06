@@ -1,0 +1,19 @@
+{
+  "name": "tokyo-0505.cs8.biz",
+  "version": "0.0.0",
+  "homepage": "tokyo-0505.cs8.biz",
+  "authors": [
+    "maltinerecords"
+  ],
+  "license": "none",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.0"
+  }
+}
