@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
     var srcDir = 'develop/',
-        destDir = 'public/assets/';
+        destDir = 'assets/';
 
     grunt.initConfig({
 
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                     lineNumbers: true
                 },
                 files: {
-                    'public/assets/css/tokyo.min.css': [srcDir + 'css/*']
+                    'assets/css/tokyo.min.css': [srcDir + 'css/*']
                 }
             }
         },
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
             },
             main: {
                 files: {
-                    'public/assets/js/tokyo.min.js': [ srcDir + 'js/*']
+                    'assets/js/tokyo.min.js': [ srcDir + 'js/*']
                 }
             }
 

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  z-index: 100;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#content {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
