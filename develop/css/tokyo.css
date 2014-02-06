@@ -17,7 +17,15 @@ a, a:hover, a:visited {
 }
 
 #content {
-  width: 1000px;
+  width: 300px;
   margin: 0 auto;
   padding: 60px 0px;
+}
+
+.tokyoLogo {
+	margin-bottom: 60px;
+}
+
+.maltineLogo {
+	margin-top: 60px;
 }
