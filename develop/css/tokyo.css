@@ -5,6 +5,12 @@ html, body {
   margin: 0px;
   text-align: center;
   z-index: 100;
+  overflow: auto;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 a, a:hover, a:visited {
@@ -12,20 +18,69 @@ a, a:hover, a:visited {
   color: #000;
 }
 
+img {
+  border: none;
+}
+
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .wrapper {
   width: 100%;
+  height: 480px;
+  overflow: hidden;
 }
 
 #content {
   width: 300px;
   margin: 0 auto;
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .tokyoLogo {
-	margin-bottom: 60px;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 360px) {
+  .wrapper {
+    height: 100%;
+  }
+
+  #content {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 360px;
+  }
+
+  .tokyoLogo {
+    width: 360px;
+    margin-bottom: 40px;
+  }
+}
+
+.date {
+  width: 280px;
+  margin-left: 20px;
 }
 
 .maltineLogo {
-	margin-top: 60px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 120px;
+}
+
+#backgroundImage {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
